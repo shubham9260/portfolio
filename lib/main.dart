@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'screens/portfolio_screen.dart';  // Import your screen
+import 'screens/portfolio_screen.dart';  
 
 void main() {
   runApp(MyPortfolioApp());
