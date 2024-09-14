@@ -14,7 +14,7 @@ class MyPortfolioApp extends StatelessWidget {
       builder: (context, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: PortfolioScreen(),  // Load your main screen
+          home: PortfolioScreen(),  
         );
       },
     );
