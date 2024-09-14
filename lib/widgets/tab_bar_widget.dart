@@ -8,7 +8,7 @@ class TabBarWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return TabBar(
-      controller: controller,  // Provide explicit TabController
+      controller: controller,  
       indicatorColor: Colors.orange,
       labelColor: Colors.orange,
       unselectedLabelColor: Colors.grey,
@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 4, vsync: this);  // Create TabController
+    _tabController = TabController(length: 4, vsync: this);  
   }
 
   @override
@@ -50,15 +50,15 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     return Scaffold(
       appBar: AppBar(
         title: Text('TabBar Example'),
-        bottom: TabBarWidget(controller: _tabController),  // Pass TabController to TabBarWidget
+        bottom: TabBarWidget(controller: _tabController),  
       ),
       body: TabBarView(
-        controller: _tabController,  // Link TabController to TabBarView
+        controller: _tabController,  
         children: [
-          Center(child: Text('Project')),  // Content for the Project tab
-          Container(),  // Empty Container for Saved tab (shows nothing)
-          Container(),  // Empty Container for Shared tab (shows nothing)
-          Container(),  // Empty Container for Achievement tab (shows nothing)
+          Center(child: Text('Project')),  
+          Container(),  
+          Container(), 
+          Container(),  
         ],
       ),
     );
