@@ -54,13 +54,13 @@ class _PortfolioScreenState extends State<PortfolioScreen> with SingleTickerProv
           IconButton(
             icon: Icon(Icons.notifications),
             onPressed: () {
-              // Add notification logic here
+              
             },
           ),
           IconButton(
             icon: Icon(Icons.shopping_bag),
             onPressed: () {
-              // Add shopping bag logic here
+            
             },
           ),
 
@@ -72,7 +72,7 @@ class _PortfolioScreenState extends State<PortfolioScreen> with SingleTickerProv
       ),
       body: Column(
         children: [
-          Expanded(child: _buildBody()), // Main body content
+          Expanded(child: _buildBody()), 
           if (_selectedIndex == 1)
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -80,10 +80,10 @@ class _PortfolioScreenState extends State<PortfolioScreen> with SingleTickerProv
                 icon: Icon(Icons.filter_list),
                 label: Text('Filter Projects'),
                 onPressed: () {
-                  // Add filter logic here
+                  
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.orange, // Use backgroundColor instead of primary
+                  backgroundColor: Colors.orange, 
                 ),
               ),
             ),
