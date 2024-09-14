@@ -17,7 +17,7 @@ class ProjectCard extends StatelessWidget {
         child: Row(
           children: [
             SvgPicture.asset(
-              'assets/ic_instagram.svg',  // Sample SVG icon
+              'assets/ic_instagram.svg',  
               width: 50.w,
               height: 50.h,
             ),
